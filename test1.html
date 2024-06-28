@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 𝐷𝑖𝓷𝑒𝕾ℎ𝓲𝓷𝒆</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="cart-icon">
+            <i class="shopping-cart"></i>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Our Restaurant</h2>
+        <h1 style="font-size: 4em;">🅳🅸🅽🅴🆂🅷🅸🅽🅴</h1>
+        <p>Experience the best dining in town.</p>
+    </section>
+
+    <section id="about">
+        <h1>About Us</h1>
+        <p>
+            We serve delicious and fresh meals made from locally sourced ingredients.<br><br>
+            Welcome to DINESHINE, where passion for Italian cuisine meets exceptional dining experiences. Located in the heart of Delhi, DINESHINE is dedicated to bringing you the finest and most authentic Italian dishes, crafted with love and the freshest ingredients.
+            <br><br>
+            Our story began with a simple idea: to create a place where people could come together to enjoy delicious food and make lasting memories. At DINESHINE, we believe in the power of good food to bring people closer, and our menu reflects this philosophy. From classic pastas and wood-fired pizzas to gourmet specials and delightful desserts, every dish is a celebration of Italy’s rich culinary heritage.
+            <br><br>
+            At DINESHINE, we pride ourselves on our warm and welcoming atmosphere. Whether you're joining us for a family dinner, a romantic date, or a casual meal with friends, our team is here to ensure that your experience is nothing short of extraordinary. Our chefs are passionate about using traditional techniques and the highest quality ingredients to create dishes that are both flavorful and beautifully presented.
+            <br><br>
+            We invite you to come and savor the flavors of Italy at DINESHINE. Buon appetito!
+        </p>
+    </section>
+
+    <section id="menu">
+        <h1>Our Menu</h1>
+        <div class="menu-item" onclick="openMenuItem('Margherita Pizza', '$12.99')">
+            <img src="pexels-kampus-6605220.jpg" alt="Pizza">
+            <h2>Margherita Pizza</h2>
+            <p>$12.99</p>
+        </div>
+        <div class="menu-item" onclick="openMenuItem('Cheeseburger', '$10.99')">
+            <img src="pexels-ryutaro-5745991.jpg" alt="Burger">
+            <h2>Cheeseburger</h2>
+            <p>$10.99</p>
+        </div>
+        <div class="menu-item" onclick="openMenuItem('Spaghetti Carbonara', '$14.99')">
+            <img src="pexels-klaus-nielsen-6287525.jpg" alt="Spaghetti">
+            <h2>Spaghetti Carbonara</h2>
+            <p>$14.99</p>
+        </div>
+        <div class="menu-item" onclick="openMenuItem('White Pasta', '$17.99')">
+            <img src="pasta_penne_spinach_pasta.jpg" alt="Pasta">
+            <h2>White Pasta</h2>
+            <p>$17.99</p>
+        </div>
+        <div class="menu-item" onclick="openMenuItem('Rose Mint', '$5.99')">
+            <img src="istockphoto-905878604-1024x1024.jpg" alt="Rose Mint">
+            <h2>Rose Mint</h2>
+            <p>$5.99</p>
+        </div>
+        <div class="menu-item" onclick="openMenuItem('Mojito', '$9.99')">
+            <img src="mojito_drink_cocktail_holiday.jpg" alt="Mojito">
+            <h2>Mojito</h2>
+            <p>$9.99</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Address: 123 Food Street, Model Town</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: contact@DINESHINE.com</p>
+    </section>
+
+    <div id="menu-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeMenuItem()">&times;</span>
+            <img id="popup-img" src="" alt="Menu Item">
+            <h2 id="popup-title"></h2>
+            <p id="popup-price"></p>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
