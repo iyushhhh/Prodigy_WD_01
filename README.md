@@ -30,7 +30,7 @@ The page showcases the restaurant's offerings with attractive images and prices,
 
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/yourusername/restaurant-landing-page.git
+    git clone https://github.com/iyushhhh/restaurant-landing-page.git
     ```
 
 2. **Navigate to the Project Directory**:
